@@ -7,7 +7,7 @@ public class Circle {
   private double radius;
   
   // Constructor
-  public Cicle() {
+  public Circle() {
     radius = 1.0;
   }
   public Circle ( double rd ) {
@@ -21,8 +21,11 @@ public class Circle {
     public double getRadius() {
     return radius;
   }
-    public double findArea ( double rd ) {
-    return Math.PI*Math.Pow( rd, 2 );
+    public double findArea () {
+    return Math.PI * Math.pow( radius, 2 );
+  }
+    public double findArea( double rd ) {
+      return Math.PI * Math.pow( rd, 2 );  
   }
    
    
