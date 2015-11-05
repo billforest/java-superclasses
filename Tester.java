@@ -12,7 +12,7 @@ public class Tester {
     // Test the bikes
     Bicycle b = new Bicycle();
     MTB m = new MTB();
-    
+        
     b.speedUp( 24 );
     m.speedUp( 34 );
     
@@ -28,5 +28,21 @@ public class Tester {
     System.out.println( "The volume of the cylinder is: " + cy.findVolume() );
     System.out.println( "The volume of a new cylinder is: " + cy.findVolume(2,5 ) );
     
+    // Test the Abstract class
+    System.out.println();
+    
+    Square sq = new Square();
+    System.out.println( "Square area is: " + sq.findArea( sq.getLength(), sq.getWidth()) );
+    
+    // Test the Interface
+    System.out.println();
+    
+    Shark shark = new Shark();
+    shark.hunt();
+    shark.eat();
+    shark.swim();
+    shark.run();
+    shark.jump();
+    shark.hide();
   }
 }
